@@ -1,0 +1,19 @@
+name: River-Guild-AI-Agent
+on:
+  push:
+    paths:
+      - 'command_center.md' # 마스터가 명령을 내릴 때마다
+  schedule:
+    - cron: '*/30 * * * *' # 30분마다 스스로 판단하여 가동
+
+jobs:
+  think_and_act:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+      - name: AI Processing
+        run: |
+          echo "지능망 에이전트 'River-Bot' 소환 완료."
+          echo "마스터 Jegal Deokju의 의지를 분석합니다."
+          echo "글로벌 수수료 0% 달성을 위한 연산을 시작합니다."
