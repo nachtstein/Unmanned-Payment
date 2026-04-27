@@ -1,9 +1,9 @@
 {
   "guild_name": "River Guild",
   "master": "Jegal Deokju",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "target_entropy": -3.0,
-  "mode": "Active_Invasion",
+  "mode": "Global_Expansion",
   "auto_update": true,
   "motto": "Intelligence reads, Code executes, Master rules."
 }
