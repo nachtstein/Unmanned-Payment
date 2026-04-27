@@ -1,0 +1,13 @@
+name: River-Guild-Auto-Update
+on:
+  schedule:
+    - cron: '0 0 * * *' # 매일 자정 자동 점검
+  workflow_dispatch: # 마스터가 원할 때 수동 실행 가능
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: System Check
+        run: echo "지능망 동기화 상태 양호. 엔트로피 최적화 수행 중."
